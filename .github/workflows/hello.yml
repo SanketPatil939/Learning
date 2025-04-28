@@ -1,12 +1,11 @@
-name: helloword
+name: Simple Hello Action
 
 on: [push]
 
 jobs:
-  build:
+  hello_job:
     runs-on: ubuntu-latest
 
     steps:
-    uses: actions/checkout@v2
-    -name: single line command
-    run: echo frist line
+      - name: Print a message
+        run: echo "Hello from GitHub Actions!"
