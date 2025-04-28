@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    uses: action/checkout@v2
+    uses: action/checkout@*
     -name: single line command
     run: echo frist line
